@@ -1,0 +1,41 @@
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes pulse {
+  50% {
+    background: white;
+  }
+}
+@keyframes pulse {
+  50% {
+    background: white;
+  }
+}
+
+.Loading {
+  border-radius: 50%;
+  width: 24px;
+  margin: 0 auto;
+  height: 24px;
+  border: 0.25rem solid rgba(163, 147, 147, 0.3);
+  border-top-color: rgb(153, 147, 147);
+  -webkit-animation: spin 1s infinite linear;
+  animation: spin 1s infinite linear;
+}

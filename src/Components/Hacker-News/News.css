@@ -1,0 +1,17 @@
+.news-body {
+  height: auto !important;
+}
+
+body {
+  font-size: 20px;
+  background: #0e0520;
+  color: white !important;
+}
+
+.page {
+  margin: 20px;
+}
+
+.interactions {
+  text-align: center;
+}

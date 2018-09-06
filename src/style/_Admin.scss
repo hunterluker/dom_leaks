@@ -1,0 +1,137 @@
+// ADMIN PANEL
+.admin-panel {
+  position: relative;
+  height: auto;
+}
+.admin-title {
+  text-align: left;
+}
+
+.user-title {
+  text-align: left;
+}
+
+.table-title {
+  text-align: left;
+}
+
+.table-leaks {
+  padding-bottom: 15px;
+}
+
+.user-table i {
+  position: relative;
+  left: 30px;
+  margin-left: 5px;
+}
+
+.admin-table i {
+  position: relative;
+  left: 0px;
+  margin-left: 10px;
+}
+
+.update-btn {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  position: absolute;
+  left: 15px;
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.update-delete-btn {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  position: absolute;
+  right: 15px;
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sidebar {
+  height: 300px !important;
+}
+
+.sidebar-btn {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  z-index: 5;
+  margin: 20px 0px;
+  padding: 5px 20px;
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.sidebar-nav {
+  background: #0e0520 !important;
+  border: none !important;
+}
+
+// PORTAL
+.portal-head {
+  font-size: 24px !important;
+}
+
+.post-btn {
+  position: relative;
+  top: 40px;
+  right: 5px;
+  padding: 5px 10px;
+  color: #0e0520;
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.portal-form label {
+  margin-top: 5px;
+}
+
+.portal-form input {
+  background: #170935;
+  font-family: 'Ubuntu';
+  color: white;
+  margin-bottom: 3px;
+}
+
+.portal-form input:focus {
+  background: #170935;
+  color: white;
+}
+
+.portal-form textarea {
+  background: #170935;
+  font-family: 'Ubuntu';
+  color: white;
+  margin-bottom: 3px;
+}
+
+.portal-form textarea:focus {
+  background: #170935;
+  color: white;
+}
+
+.portal-form input::placeholder {
+  color: white !important;
+}
+
+.close-portal {
+  font-size: 20px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.submit-delete-btn {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  color: #0e0520;
+  float: right;
+  text-transform: uppercase;
+  font-weight: bold;
+}

@@ -1,0 +1,81 @@
+// HOME PAGE
+.page-welcome {
+  width: 100%;
+  display: flex;
+  float: left;
+  padding: 10px 0px 0px 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.page-number {
+  margin-right: 10px;
+}
+
+.secondary-title {
+  position: absolute;
+  top: 32%;
+  font-family: 'Exo';
+  font-size: 12px;
+  padding: 3px;
+  color: black;
+  background-color: white;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.main-title {
+  font-size: 35px;
+  position: absolute;
+  top: 40%;
+  color: white;
+  letter-spacing: 5px;
+}
+.animation-text {
+  font-size: 15px;
+  font-family: 'Exo';
+}
+.typing-animation {
+  position: absolute;
+  top: 50%;
+}
+.border-title {
+  position: absolute;
+  top: 48%;
+  width: 90px;
+  height: 3px;
+  background-color: red;
+}
+.login-setup {
+  position: absolute;
+  top: 60%;
+}
+.login-setup .btn {
+  font-size: 13px;
+  background-color: red !important;
+}
+.login-setup .btn:last-child {
+  margin-left: 20px;
+}
+
+// FOOTER
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+}
+footer i {
+  font-size: 25px;
+  color: white;
+  float: left;
+  margin-left: 20px;
+}
+footer p {
+  margin-top: 3px;
+  margin-right: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  float: right;
+}

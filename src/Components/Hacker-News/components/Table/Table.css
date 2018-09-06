@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Exo|Play|Ubuntu');
+.table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+  font-family: 'Ubuntu';
+}
+
+.table thead {
+  text-align: center;
+}
+
+.table td {
+  margin: 10px 0;
+  padding: 10px;
+  background: #0e0520;
+  text-align: left;
+}
+
+a {
+  color: white !important;
+  font-size: 20px;
+}
+
+.points-author {
+  font-style: italic;
+  font-size: 12px;
+}

@@ -1,0 +1,42 @@
+@import 'Navbar';
+@import 'Particle';
+@import 'Home';
+@import 'MediaQueries';
+@import 'Leak';
+@import 'Four';
+@import 'Submit';
+@import 'Admin';
+@import 'Donate';
+@import 'Loader';
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+@import url('https://fonts.googleapis.com/css?family=Abel|Exo|Play|Ubuntu');
+
+.App {
+  text-align: center;
+  background-color: #0e0520;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: 'Orbitron';
+  width: 100vw;
+  min-height: 100vh;
+  font-size: 16px;
+}
+
+.btn {
+  background: red !important;
+}
+
+.please-login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.logout-btn {
+  text-transform: uppercase;
+}

@@ -1,0 +1,57 @@
+// SUBMISSION FORM
+.submit-title {
+  position: absolute;
+  top: 20%;
+  font-family: 'Exo';
+  font-size: 12px;
+  padding: 3px;
+  color: black;
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.submit-p {
+  font-size: 12px;
+  position: absolute;
+  top: 27%;
+  width: 80%;
+  text-align: left;
+  font-family: 'Ubuntu';
+}
+
+.submit-form {
+  font-size: 12px;
+  position: absolute;
+  top: 40%;
+  text-align: left;
+  width: 90%;
+  overflow: hidden;
+}
+
+.submit-form input {
+  background: #170935;
+  font-family: 'Ubuntu';
+  width: 100% !important;
+  color: white;
+  overflow: hidden;
+}
+
+.submit-form input:focus {
+  background: #170935;
+  color: white;
+}
+
+.submit-form input::placeholder {
+  color: white !important;
+}
+
+.submit-btn {
+  margin: 20px 0px;
+  padding: 5px 20px;
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold;
+}

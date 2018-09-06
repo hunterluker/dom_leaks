@@ -1,0 +1,29 @@
+form {
+  position: relative;
+}
+
+.Search-icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.Search-input {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+  float: left;
+  background: #170935 !important;
+  font-family: 'Ubuntu';
+  width: 100% !important;
+  color: white !important;
+}
+
+/* .Search-icon {
+  float: left;
+  text-transform: uppercase;
+  background: red;
+  color: white;
+  cursor: pointer;
+} */
