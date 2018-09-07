@@ -9,6 +9,11 @@
   position: relative;
 }
 
+.dash {
+  font-family: 'Orbitron';
+  font-size: 20px;
+}
+
 .donate-title-1 {
   font-family: 'Ubuntu';
   color: white !important;
@@ -35,6 +40,10 @@
 // PROFILE
 .bitcoin-card {
   background: rgba($color: #c2c2c2, $alpha: 0.5) !important;
+}
+
+.card {
+  box-shadow: 3px 3px 5px rgba($color: #ffffff, $alpha: 0.5);
 }
 
 .donate {

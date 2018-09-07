@@ -9,7 +9,8 @@ export default class Leaks extends Component {
     super(props);
 
     this.state = {
-      leaks: []
+      leaks: [],
+      docs: []
     };
   }
 
@@ -19,13 +20,19 @@ export default class Leaks extends Component {
         leaks: resp.data
       });
     });
+
+    axios.get('/api/docs').then(resp => {
+      this.setState({
+        docs: resp.data
+      });
+    });
   }
 
   render() {
     let mappedLeaks = this.state.leaks.map((leak, i) => {
       return (
         <Link to={`/leaks/${leak.leak_id}`} key={i}>
-          <Leak leak={leak} />
+          <Leak leak={leak} doc={this.state.docs} />
         </Link>
       );
     });

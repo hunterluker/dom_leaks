@@ -8,7 +8,8 @@ class DetailLeak extends Component {
     super(props);
 
     this.state = {
-      leak: {}
+      leak: {},
+      docs: []
     };
   }
 
@@ -18,15 +19,32 @@ class DetailLeak extends Component {
         leak: resp.data[0]
       });
     });
+
+    axios.get('/api/docs').then(resp => {
+      this.setState({
+        docs: resp.data
+      });
+    });
   }
 
   render() {
+    let mappedDocs = this.state.docs.map((doc, i) => {
+      return doc.leak_id === this.state.leak.leak_id ? (
+        <div key={i}>
+          <a href={doc.document} download>
+            <img
+              className="float-left mb-5"
+              src={file}
+              alt="file-download"
+              width="45px"
+            />
+          </a>
+        </div>
+      ) : null;
+    });
+
     return (
       <div className="container detail-leak-container">
-        {/* <div className="page-welcome">
-          {' '}
-          <span className="page-number" />
-        </div> */}
         <Link to="/leaks" className="back-icon">
           <i className="fas fa-arrow-circle-left" /> Back
         </Link>
@@ -39,14 +57,8 @@ class DetailLeak extends Component {
 
         <div className="documents my-5">
           <h4 className="text-left pb-2">Leaked Documents:</h4>
-          <a href={this.state.leak} download>
-            <img
-              className="float-left mb-5"
-              src={file}
-              alt="file-download"
-              width="45px"
-            />
-          </a>
+
+          {mappedDocs}
         </div>
       </div>
     );

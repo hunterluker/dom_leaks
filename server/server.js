@@ -9,6 +9,9 @@ const router = express.Router();
 const nodemailer = require('nodemailer');
 const creds = require('./creds');
 
+const socket = require('socket.io');
+const SocketManager = require('./SocketManager');
+
 const usersCtrl = require('./users-controller');
 const leaksCtrl = require('./leaks-controller');
 const docsCtrl = require('./documents-controller');
@@ -219,6 +222,14 @@ app.put('/api/leaks/:id', leaksCtrl.updateLeak);
 // DOCUMENTS ENDPOINTS
 app.get('/api/docs', docsCtrl.getAllDocs);
 
+app.get('/api/docs', docsCtrl.getDocsAndLeaks);
+
 app.delete('/api/docs/:id', docsCtrl.deleteDoc);
 
-app.listen(SERVER_PORT, () => console.log(`Listening on port: ${SERVER_PORT}`));
+module.exports = io = socket(
+  app.listen(SERVER_PORT, () =>
+    console.log(`Listening on port: ${SERVER_PORT}`)
+  )
+);
+
+io.on('connection', SocketManager);

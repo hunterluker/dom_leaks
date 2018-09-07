@@ -71,7 +71,6 @@ class Admin extends Component {
           leaks: resp.data,
           open: false
         });
-        this.props.updateUser({ date, image, title, description });
       });
   }
 
@@ -359,7 +358,10 @@ class Admin extends Component {
         ) : (
           <div className="please-login">
             <p className="h1">Login</p>
-            <button className="btn btn-sm btn-danger" onClick={this.login}>
+            <button
+              className="btn btn-sm btn-danger login-btn"
+              onClick={this.login}
+            >
               LOGIN
             </button>
           </div>

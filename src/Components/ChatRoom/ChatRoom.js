@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-// import Layout from './components/Layout';
-// import './chat.css';
+import Layout from './components/Layout';
+import './chat.css';
 
-class ChatRoom extends Component {
+class Chatroom extends Component {
   render() {
-    return <div>Chatroom</div>;
+    return <Layout />;
   }
 }
 
-export default ChatRoom;
+export default Chatroom;
