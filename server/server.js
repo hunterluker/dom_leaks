@@ -15,6 +15,7 @@ const SocketManager = require('./SocketManager');
 const usersCtrl = require('./users-controller');
 const leaksCtrl = require('./leaks-controller');
 const docsCtrl = require('./documents-controller');
+const stripCtrl = require('./stripe-controller');
 
 const app = express();
 
@@ -65,7 +66,8 @@ const {
   NODE_ENV,
   S3_BUCKET,
   AWS_ACCESS_KEY_ID,
-  AWS_SECRET_ACCESS_KEY
+  AWS_SECRET_ACCESS_KEY,
+  STRIPE_SECRET
 } = process.env;
 
 // AWS UPLOADER
@@ -225,6 +227,9 @@ app.get('/api/docs', docsCtrl.getAllDocs);
 app.get('/api/docs', docsCtrl.getDocsAndLeaks);
 
 app.delete('/api/docs/:id', docsCtrl.deleteDoc);
+
+// STRIPE
+app.post('/api/payment', stripCtrl.handlePayment);
 
 module.exports = io = socket(
   app.listen(SERVER_PORT, () =>

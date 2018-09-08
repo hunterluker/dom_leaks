@@ -50,7 +50,7 @@ drop table if exists documents;
 create table documents
 (
     docs_id serial primary key,
-    leak_id integer,
+    leak_id  integer REFERENCES leaks(leak_id),
     document text
 )
 

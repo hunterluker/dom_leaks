@@ -60,6 +60,13 @@ module.exports = function(socket) {
     }
   });
 
+  //User logout
+  socket.on(LOGOUT, () => {
+    connectedUsers = removeUser(connectedUsers, socket.user.name);
+    io.emit(USER_DISCONNECTED, connectedUsers);
+    console.log('Disconnect', connectedUsers);
+  });
+
   //Get Community Chat
   socket.on(COMMUNITY_CHAT, callback => {
     callback(communityChat);

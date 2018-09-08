@@ -129,7 +129,7 @@ class Admin extends Component {
       return (
         <tbody key={i}>
           <tr>
-            <th scope="row">{doc.docs_id}</th>
+            <th scope="row">{doc.leak_id}</th>
             <td>{doc.document.substring(0, 20)}</td>
             <td>
               <i
@@ -211,7 +211,10 @@ class Admin extends Component {
                 <Segment basic className="sidebar-nav">
                   <br />
                   <br />
-                  <Chart userCount={this.state.docs.length} />
+                  <Chart
+                    docsCount={this.state.docs.length}
+                    leaksCount={this.state.leaks.length}
+                  />
                   <br />
                   <br />
                   <h5 className="user-title">Documents</h5>

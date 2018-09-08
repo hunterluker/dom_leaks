@@ -98,7 +98,7 @@ export default class ChatContainer extends Component {
         <div className="chat-room-container">
           {activeChat !== null ? (
             <div className="chat-room">
-              <ChatHeading name={activeChat.name} />
+              <ChatHeading name={activeChat.name} logout={this.props.logout} />
               <Messages
                 messages={activeChat.messages}
                 user={user}

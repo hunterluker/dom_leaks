@@ -6,11 +6,12 @@ class Chart extends Component {
     super(props);
 
     this.state = {
+      isLoaded: false,
       chartData: {
         labels: ['Documents', 'Leaks'],
         datasets: [
           {
-            data: [2, 4],
+            data: [2, 5],
             backgroundColor: ['rgba(255, 255, 255, 0.8)', 'rgba(255, 0, 0, 1)']
           }
         ]

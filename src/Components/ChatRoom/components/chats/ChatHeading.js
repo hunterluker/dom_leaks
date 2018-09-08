@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function({ name, numberOfUsers }) {
+export default function({ name, numberOfUsers, logout }) {
   return (
     <div className="chat-header">
       <div className="user-info">
@@ -10,7 +10,15 @@ export default function({ name, numberOfUsers }) {
           <span>{numberOfUsers ? numberOfUsers : null}</span>
         </div>
       </div>
-      <div className="options" />
+      <div>
+        <i
+          className="fas fa-sign-out-alt"
+          onClick={() => {
+            logout();
+          }}
+          title="Logout"
+        />
+      </div>
     </div>
   );
 }

@@ -28,6 +28,7 @@ class DetailLeak extends Component {
   }
 
   render() {
+    let descStr = this.state.leak.description;
     let mappedDocs = this.state.docs.map((doc, i) => {
       return doc.leak_id === this.state.leak.leak_id ? (
         <div key={i}>
@@ -52,7 +53,7 @@ class DetailLeak extends Component {
 
         <h2 className="leak-title pb-4">{this.state.leak.title}</h2>
         <div className="my-2">
-          <p className="leak-desc">{this.state.leak.description}</p>
+          <p className="leak-desc">{descStr}</p>
         </div>
 
         <div className="documents my-5">

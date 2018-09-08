@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Stripe from './Stripe';
 import bitcoin from '../../images/bitcoin.png';
 import ethereum from '../../images/ethereum.png';
 import litecoin from '../../images/litecoin.png';
@@ -40,13 +41,7 @@ class Donate extends Component {
               </p>
             </div>
             <div className="card-footer">
-              <button
-                data-toggle="modal"
-                data-target="#bitcoinModal"
-                className="donate-btn float-left"
-              >
-                DONATE
-              </button>
+              <Stripe />
             </div>
           </div>
         </div>

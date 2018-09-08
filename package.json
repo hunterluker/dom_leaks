@@ -29,11 +29,13 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "react-spinkit": "^3.0.0",
+    "react-stripe-checkout": "^2.6.3",
     "react-typing-animation": "^1.4.0",
     "reactstrap": "^6.4.0",
     "redux": "^4.0.0",
     "semantic-ui-react": "^0.82.2",
     "socket.io": "^2.1.1",
+    "stripe": "^6.10.0",
     "uuid": "^3.3.2"
   },
   "scripts": {
