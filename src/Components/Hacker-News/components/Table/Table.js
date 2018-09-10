@@ -35,7 +35,7 @@ const Table = ({ list, sortKey, onSort, isSortReverse }) => {
         <tr>
           <th>
             <Sort sortKey={'TITLE'} onSort={onSort} activeSortKey={sortKey}>
-              Title
+              Hacker News
             </Sort>
           </th>
         </tr>

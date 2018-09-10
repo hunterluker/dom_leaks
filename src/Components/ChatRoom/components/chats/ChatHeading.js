@@ -10,14 +10,16 @@ export default function({ name, numberOfUsers, logout }) {
           <span>{numberOfUsers ? numberOfUsers : null}</span>
         </div>
       </div>
-      <div>
-        <i
-          className="fas fa-sign-out-alt"
-          onClick={() => {
-            logout();
-          }}
-          title="Logout"
-        />
+      <div
+        className="logout-btn"
+        onClick={() => {
+          logout();
+        }}
+        title="Logout"
+      >
+        Logout
+        {'       '}
+        <i className="fas fa-sign-out-alt" />
       </div>
     </div>
   );

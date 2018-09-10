@@ -24,23 +24,23 @@
 // @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 // @media (min-width:1281px)
 
-@media (min-width: 1025px) {
+@media (min-width: 801px) {
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
-    left: 200px;
+    left: 400px;
   }
 
   .page-welcome {
     font-size: 18px;
     position: relative;
-    left: 200px;
+    left: 400px;
   }
 
   .secondary-title {
     position: absolute;
     top: 32%;
-    left: 220px;
+    left: 420px;
     font-family: 'Exo';
     font-size: 18px;
     padding: 3px;
@@ -52,7 +52,7 @@
   .main-title {
     font-size: 48px;
     position: absolute;
-    left: 220px;
+    left: 420px;
     top: 40%;
     color: white;
     letter-spacing: 5px;
@@ -64,28 +64,16 @@
   .typing-animation {
     position: absolute;
     top: 50%;
-    left: 220px;
+    left: 420px;
     font-size: 18px;
   }
   .border-title {
     position: absolute;
     top: 48%;
-    left: 220px;
+    left: 420px;
     width: 135px;
     height: 3px;
     background-color: red;
-  }
-  .login-setup {
-    position: absolute;
-    top: 60%;
-    left: 220px;
-  }
-  .login-setup .btn {
-    font-size: 18px;
-    background-color: red !important;
-  }
-  .login-setup .btn:last-child {
-    margin-left: 20px;
   }
 
   .radial-menu {
@@ -125,7 +113,7 @@
   footer {
     position: absolute;
     bottom: 10px;
-    left: 200px;
+    left: 400px;
     width: 100%;
   }
   footer i {
@@ -138,7 +126,7 @@
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    right: 400px;
+    right: 800px;
   }
 
   // LEAK
@@ -172,7 +160,7 @@
   }
 
   .leak {
-    margin: 30px 50px;
+    margin: 30px 50px !important;
     width: 40%;
     float: left;
     min-height: 500px !important;

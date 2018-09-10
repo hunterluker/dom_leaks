@@ -220,19 +220,19 @@ footer p {
   footer p {
     font-size: 13px; } }
 
-@media (min-width: 1025px) {
+@media (min-width: 801px) {
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
-    left: 200px; }
+    left: 400px; }
   .page-welcome {
     font-size: 18px;
     position: relative;
-    left: 200px; }
+    left: 400px; }
   .secondary-title {
     position: absolute;
     top: 32%;
-    left: 220px;
+    left: 420px;
     font-family: 'Exo';
     font-size: 18px;
     padding: 3px;
@@ -243,7 +243,7 @@ footer p {
   .main-title {
     font-size: 48px;
     position: absolute;
-    left: 220px;
+    left: 420px;
     top: 40%;
     color: white;
     letter-spacing: 5px; }
@@ -253,24 +253,15 @@ footer p {
   .typing-animation {
     position: absolute;
     top: 50%;
-    left: 220px;
+    left: 420px;
     font-size: 18px; }
   .border-title {
     position: absolute;
     top: 48%;
-    left: 220px;
+    left: 420px;
     width: 135px;
     height: 3px;
     background-color: red; }
-  .login-setup {
-    position: absolute;
-    top: 60%;
-    left: 220px; }
-  .login-setup .btn {
-    font-size: 18px;
-    background-color: red !important; }
-  .login-setup .btn:last-child {
-    margin-left: 20px; }
   .radial-menu {
     margin-right: 400px;
     top: -4px;
@@ -300,7 +291,7 @@ footer p {
   footer {
     position: absolute;
     bottom: 10px;
-    left: 200px;
+    left: 400px;
     width: 100%; }
   footer i {
     font-size: 35px;
@@ -311,7 +302,7 @@ footer p {
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    right: 400px; }
+    right: 800px; }
   .leaks {
     width: 100%; }
   .leak-search {
@@ -331,7 +322,7 @@ footer p {
   .search-input::placeholder {
     color: white !important; }
   .leak {
-    margin: 30px 50px;
+    margin: 30px 50px !important;
     width: 40%;
     float: left;
     min-height: 500px !important;
@@ -400,12 +391,15 @@ footer p {
 
 .leak-title {
   text-align: left;
-  padding-top: 20px; }
+  font-size: 1.6rem;
+  padding-top: 20px;
+  font-weight: bold; }
 
 .leak-desc {
   text-align: left;
   color: white;
-  font-family: 'Ubuntu'; }
+  font-family: 'Ubuntu';
+  line-height: 1.5; }
 
 .back-icon {
   position: absolute;
@@ -414,7 +408,8 @@ footer p {
   font-size: 16px; }
 
 .file {
-  transition: all 0.3s; }
+  transition: all 0.3s;
+  margin-right: 25px; }
 
 .file:hover {
   transform: translateY(-3px); }

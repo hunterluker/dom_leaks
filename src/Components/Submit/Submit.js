@@ -71,6 +71,11 @@ export default class Submit extends Component {
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
   render() {
+    var componentConfig = {
+      uploadMultiple: true,
+      parallelUploads: 100,
+      maxFiles: 100
+    };
     return (
       <div className="container">
         <div className="page-welcome">
@@ -138,6 +143,7 @@ export default class Submit extends Component {
               width: 100,
               height: 100,
               borderWidth: 7,
+              autoProcessQueue: true,
               marginTop: '20px',
               borderColor: 'rgba(255, 255, 255, 0.9)',
               borderStyle: 'dashed',
@@ -149,6 +155,7 @@ export default class Submit extends Component {
             }}
             accept="image/*,.xlsx,.xls,.pdf,.doc,.docx,.txt,.rtf"
             multiple={true}
+            config={componentConfig}
           >
             {this.state.isUploading ? (
               <Loader />

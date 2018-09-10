@@ -59,12 +59,15 @@
 
 .leak-title {
   text-align: left;
+  font-size: 1.6rem;
   padding-top: 20px;
+  font-weight: bold;
 }
 .leak-desc {
   text-align: left;
   color: white;
   font-family: 'Ubuntu';
+  line-height: 1.5;
 }
 
 .back-icon {
@@ -76,6 +79,7 @@
 
 .file {
   transition: all 0.3s;
+  margin-right: 25px;
 }
 
 .file:hover {

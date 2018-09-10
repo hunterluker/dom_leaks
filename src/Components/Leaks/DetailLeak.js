@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
-import file from '../../images/033-file.svg';
 
 class DetailLeak extends Component {
   constructor(props) {
@@ -34,8 +33,8 @@ class DetailLeak extends Component {
         <div key={i}>
           <a href={doc.document} download>
             <img
-              className="float-left mb-5"
-              src={file}
+              className="float-left mb-5 file"
+              src="https://wikileaks.org/vault8/img/document.png"
               alt="file-download"
               width="45px"
             />
