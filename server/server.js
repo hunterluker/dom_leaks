@@ -222,7 +222,7 @@ app.delete('/api/leaks/:id', leaksCtrl.deleteLeak);
 app.put('/api/leaks/:id', leaksCtrl.updateLeak);
 
 // DOCUMENTS ENDPOINTS
-app.get('/api/docs', docsCtrl.getAllDocs);
+// app.get('/api/docs', docsCtrl.getAllDocs);
 
 app.get('/api/docs', docsCtrl.getDocsAndLeaks);
 

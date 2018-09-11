@@ -10,7 +10,8 @@ export default class Leaks extends Component {
 
     this.state = {
       leaks: [],
-      docs: []
+      docs: [],
+      userInput: ''
     };
   }
 
@@ -25,6 +26,12 @@ export default class Leaks extends Component {
       this.setState({
         docs: resp.data
       });
+    });
+  }
+
+  handleInput(val) {
+    this.setState({
+      userInput: val
     });
   }
 
@@ -49,9 +56,11 @@ export default class Leaks extends Component {
             type="text"
             className="form-control search-input"
             placeholder="Search Keywords"
+            onChange={e => this.handleInput(e.target.value)}
           />
           <img width="23px" className="search-icon" src={search} alt="search" />
         </div>
+        <h4 className="text-left my-4">Featured</h4>
 
         <div className="leak-container">
           <div className="leaks">{mappedLeaks}</div>
