@@ -60,7 +60,7 @@ export default class Leaks extends Component {
           />
           <img width="23px" className="search-icon" src={search} alt="search" />
         </div>
-        <h4 className="text-left my-4">Featured</h4>
+        <h4 className="text-left my-4 featured">Featured</h4>
 
         <div className="leak-container">
           <div className="leaks">{mappedLeaks}</div>

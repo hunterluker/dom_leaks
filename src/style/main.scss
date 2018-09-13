@@ -12,12 +12,16 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Abel|Exo|Play|Ubuntu');
 
+// Variables
+$font-stack: 'Orbitron', sans-serif;
+$primary-color: #0e0520;
+
 .App {
   text-align: center;
-  background-color: #0e0520;
+  background-color: $primary-color;
   overflow: hidden;
   box-sizing: border-box;
-  font-family: 'Orbitron';
+  font-family: $font-stack;
   width: 100vw;
   min-height: 100vh;
   font-size: 16px;

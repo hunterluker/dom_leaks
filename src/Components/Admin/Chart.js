@@ -6,16 +6,7 @@ class Chart extends Component {
     super(props);
 
     this.state = {
-      isLoaded: false,
-      chartData: {
-        labels: ['Documents', 'Leaks'],
-        datasets: [
-          {
-            data: [2, 5],
-            backgroundColor: ['rgba(255, 255, 255, 0.8)', 'rgba(255, 0, 0, 1)']
-          }
-        ]
-      }
+      isLoaded: false
     };
   }
 
@@ -25,10 +16,19 @@ class Chart extends Component {
   };
 
   render() {
+    let chartData = {
+      labels: ['Documents', 'Leaks'],
+      datasets: [
+        {
+          data: [this.props.docsCount, this.props.leaksCount],
+          backgroundColor: ['rgba(255, 255, 255, 0.8)', 'rgba(255, 0, 0, 1)']
+        }
+      ]
+    };
     return (
       <div className="chart">
         <Doughnut
-          data={this.state.chartData}
+          data={chartData}
           options={{
             maintainAspectRatio: false,
             legend: {

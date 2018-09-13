@@ -13,7 +13,7 @@ class Donate extends Component {
           <span className="page-number">04</span> Donate
         </div>
 
-        <div className="container text-left donate-title-1">
+        <div className="container text-left donate-title-1 page-donate">
           <h2 className="mb-3">Donate to DOM Leaks</h2>
           <div className="white-line mb-4" />
           <p>
@@ -28,7 +28,7 @@ class Donate extends Component {
         </div>
 
         <div className="account-info container">
-          <div className="card bg-light text-dark">
+          <div className="card bg-light text-dark donate-card">
             <div className="card-header">
               <h4 className="donate text-left">Credit Card</h4>
             </div>
@@ -47,7 +47,7 @@ class Donate extends Component {
         </div>
 
         <div className="account-info container">
-          <div className="card bg-light text-dark">
+          <div className="card bg-light text-dark donate-card">
             <div className="card-header">
               <h4 className="donate text-left">Bitcoin</h4>
             </div>
@@ -75,7 +75,7 @@ class Donate extends Component {
         </div>
 
         <div className="account-info container">
-          <div className="card bg-light text-dark">
+          <div className="card bg-light text-dark donate-card">
             <div className="card-header">
               <h4 className="donate text-left">Ethereum</h4>
             </div>
@@ -105,7 +105,7 @@ class Donate extends Component {
         </div>
 
         <div className="account-info container mb-5">
-          <div className="card bg-light text-dark">
+          <div className="card bg-light text-dark donate-card">
             <div className="card-header">
               <h4 className="donate text-left">Litecoin</h4>
             </div>

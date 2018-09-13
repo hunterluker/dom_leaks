@@ -20,7 +20,8 @@ const stripCtrl = require('./stripe-controller');
 const app = express();
 
 app.set('view engine', 'ejs');
-app.use(express.static('public'));
+// app.use(express.static('public'));
+app.use(express.static(`${__dirname}/../build`));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/send-email', function(req, res) {
@@ -43,7 +44,7 @@ app.post('/send-email', function(req, res) {
     from: req.body.email, // sender address
     to: 'hunterluker33@gmail.com', // list of receivers
     subject: 'DOM Leaks Submit Form', // Subject line
-    html: `<h2>${content}</h2>` // html body
+    html: `<h2 style="background: #0e0520; color: white; padding: 10px; border: 3px solid #45336b; text-align: center">${content}</h2>` // html body
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -52,7 +53,7 @@ app.post('/send-email', function(req, res) {
     }
 
     console.log('Message %s sent: %s', info.messageId, info.response);
-    res.redirect('http://localhost:3000/#/success');
+    res.redirect(process.env.SUCCESS);
   });
 });
 
@@ -192,7 +193,7 @@ app.get(`/api/user-data`, envCheck, (req, res) => {
 app.get('/auth/logout', (req, res) => {
   req.session.destroy();
 
-  res.redirect('http://localhost:3000/');
+  res.redirect(process.env.HOME);
   res.send();
 });
 

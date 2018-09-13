@@ -224,15 +224,15 @@ footer p {
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
-    left: 400px; }
+    left: 200px; }
   .page-welcome {
     font-size: 18px;
     position: relative;
-    left: 400px; }
+    left: 200px; }
   .secondary-title {
     position: absolute;
     top: 32%;
-    left: 420px;
+    left: 220px;
     font-family: 'Exo';
     font-size: 18px;
     padding: 3px;
@@ -243,7 +243,7 @@ footer p {
   .main-title {
     font-size: 48px;
     position: absolute;
-    left: 420px;
+    left: 220px;
     top: 40%;
     color: white;
     letter-spacing: 5px; }
@@ -252,18 +252,18 @@ footer p {
     font-family: 'Exo'; }
   .typing-animation {
     position: absolute;
-    top: 50%;
-    left: 420px;
+    top: 52%;
+    left: 220px;
     font-size: 18px; }
   .border-title {
     position: absolute;
-    top: 48%;
-    left: 420px;
+    top: 50%;
+    left: 220px;
     width: 135px;
     height: 3px;
     background-color: red; }
   .radial-menu {
-    margin-right: 400px;
+    margin-right: 200px;
     top: -4px;
     right: -12px;
     position: fixed;
@@ -278,7 +278,7 @@ footer p {
     right: 10px;
     width: 45px;
     height: 45px;
-    margin-right: 400px;
+    margin-right: 200px;
     background: darkSlateGray;
     border-radius: 50%;
     position: absolute;
@@ -291,7 +291,7 @@ footer p {
   footer {
     position: absolute;
     bottom: 10px;
-    left: 400px;
+    left: 200px;
     width: 100%; }
   footer i {
     font-size: 35px;
@@ -302,9 +302,11 @@ footer p {
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    right: 800px; }
+    right: 400px; }
   .leaks {
     width: 100%; }
+  .featured {
+    margin-left: 135px; }
   .leak-search {
     position: relative; }
   .search-input {
@@ -317,15 +319,15 @@ footer p {
     color: white !important; }
   .search-icon {
     position: absolute;
-    top: 61px;
-    right: 280px; }
+    top: 62px !important;
+    left: 800px; }
   .search-input::placeholder {
     color: white !important; }
   .leak {
-    margin: 30px 50px !important;
-    width: 40%;
+    margin: 30px 90px !important;
+    width: 33%;
     float: left;
-    min-height: 500px !important;
+    min-height: 430px !important;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.8); }
   .leak .card-header {
     background: rgba(176, 171, 182, 0.5); }
@@ -341,7 +343,75 @@ footer p {
     font-weight: bold; }
   .leak .card-body p {
     font-size: 13px;
-    font-family: 'Ubuntu'; } }
+    font-family: 'Ubuntu'; }
+  .submit-title {
+    position: absolute;
+    top: 20%;
+    left: 300px;
+    font-family: 'Exo';
+    font-size: 12px;
+    padding: 3px;
+    color: black;
+    background-color: white;
+    letter-spacing: 1px; }
+  .submit-p {
+    font-size: 12px;
+    position: absolute;
+    overflow: hidden;
+    top: 27%;
+    left: 300px;
+    width: 40% !important;
+    text-align: left;
+    font-family: 'Ubuntu'; }
+  .submit-form {
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 320px;
+    text-align: left;
+    width: 50% !important;
+    overflow: hidden; }
+  .submit-form input {
+    background: #170935;
+    font-family: 'Ubuntu';
+    width: 10% !important;
+    color: white;
+    overflow: hidden; }
+  .submit-form input:focus {
+    background: #170935;
+    color: white; }
+  .submit-form input::placeholder {
+    color: white !important; }
+  .submit-btn {
+    margin: 20px 0px;
+    padding: 5px 20px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    color: #0e0520;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .page-donate {
+    width: 50% !important;
+    padding: 10px 0px 0px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px; }
+  .modal {
+    margin-top: 100px !important; }
+  .donate-card {
+    width: 50%;
+    margin-left: 270px; }
+  .Search-input {
+    margin-left: 320px; }
+  .Search-icon {
+    right: -310px !important; }
+  .admin-panel {
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%); } }
 
 .leak-search {
   position: relative; }
@@ -422,7 +492,7 @@ footer p {
 .submit-title {
   position: absolute;
   top: 20%;
-  font-family: 'Exo';
+  font-family: 'Exo', sans-serif;
   font-size: 12px;
   padding: 3px;
   color: black;
@@ -447,7 +517,7 @@ footer p {
 
 .submit-form input {
   background: #170935;
-  font-family: 'Ubuntu';
+  font-family: 'Ubuntu', sans-serif;
   width: 100% !important;
   color: white;
   overflow: hidden; }
@@ -465,6 +535,11 @@ footer p {
   position: absolute;
   right: 0;
   bottom: -20px;
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.update-btn, .update-delete-btn, .sidebar-btn, .post-btn, .submit-delete-btn {
   color: #0e0520;
   text-transform: uppercase;
   font-weight: bold; }
@@ -499,19 +574,13 @@ footer p {
   margin: 20px 0px;
   padding: 5px 20px;
   position: absolute;
-  left: 15px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold; }
+  left: 15px; }
 
 .update-delete-btn {
   margin: 20px 0px;
   padding: 5px 20px;
   position: absolute;
-  right: 15px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold; }
+  right: 15px; }
 
 .sidebar {
   height: 300px !important; }
@@ -522,10 +591,7 @@ footer p {
   right: 15px;
   z-index: 5;
   margin: 20px 0px;
-  padding: 5px 20px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold; }
+  padding: 5px 20px; }
 
 .sidebar-nav {
   background: #0e0520 !important;
@@ -539,10 +605,7 @@ footer p {
   top: 40px;
   right: 5px;
   padding: 5px 10px;
-  color: #0e0520;
-  float: right;
-  text-transform: uppercase;
-  font-weight: bold; }
+  float: right; }
 
 .portal-form label {
   margin-top: 5px; }
@@ -579,23 +642,10 @@ footer p {
 .submit-delete-btn {
   margin: 20px 0px;
   padding: 5px 20px;
-  color: #0e0520;
-  float: right;
-  text-transform: uppercase;
-  font-weight: bold; }
+  float: right; }
 
 .login-btn {
   font-size: 16px !important; }
-
-.page-donate {
-  width: 100%;
-  padding: 10px 0px 0px 30px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-  position: relative; }
 
 .dash {
   font-family: 'Orbitron';
@@ -663,7 +713,7 @@ footer p {
   background-color: #0e0520;
   overflow: hidden;
   box-sizing: border-box;
-  font-family: 'Orbitron';
+  font-family: "Orbitron", sans-serif;
   width: 100vw;
   min-height: 100vh;
   font-size: 16px; }

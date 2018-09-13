@@ -25,7 +25,7 @@ class Stripe extends Component {
         name="DOM Leaks"
         panelLabel="Donate"
         description="Donation"
-        image="http://via.placeholder.com/100x100"
+        image="https://i2.wp.com/thepeoplescube.com/images/various_uploads/NSA_Logo_Prism_Self_Spying_250.png"
         token={this.onToken}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
         amount={this.state.amount}

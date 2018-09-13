@@ -28,19 +28,19 @@
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
-    left: 400px;
+    left: 200px;
   }
 
   .page-welcome {
     font-size: 18px;
     position: relative;
-    left: 400px;
+    left: 200px;
   }
 
   .secondary-title {
     position: absolute;
     top: 32%;
-    left: 420px;
+    left: 220px;
     font-family: 'Exo';
     font-size: 18px;
     padding: 3px;
@@ -52,7 +52,7 @@
   .main-title {
     font-size: 48px;
     position: absolute;
-    left: 420px;
+    left: 220px;
     top: 40%;
     color: white;
     letter-spacing: 5px;
@@ -63,21 +63,21 @@
   }
   .typing-animation {
     position: absolute;
-    top: 50%;
-    left: 420px;
+    top: 52%;
+    left: 220px;
     font-size: 18px;
   }
   .border-title {
     position: absolute;
-    top: 48%;
-    left: 420px;
+    top: 50%;
+    left: 220px;
     width: 135px;
     height: 3px;
     background-color: red;
   }
 
   .radial-menu {
-    margin-right: 400px;
+    margin-right: 200px;
     top: -4px;
     right: -12px;
     position: fixed;
@@ -97,7 +97,7 @@
     right: 10px;
     width: 45px;
     height: 45px;
-    margin-right: 400px;
+    margin-right: 200px;
     background: darkSlateGray;
     border-radius: 50%;
     position: absolute;
@@ -113,7 +113,7 @@
   footer {
     position: absolute;
     bottom: 10px;
-    left: 400px;
+    left: 200px;
     width: 100%;
   }
   footer i {
@@ -126,12 +126,16 @@
     font-size: 20px;
     font-weight: bold;
     position: relative;
-    right: 800px;
+    right: 400px;
   }
 
   // LEAK
   .leaks {
     width: 100%;
+  }
+
+  .featured {
+    margin-left: 135px;
   }
 
   .leak-search {
@@ -151,8 +155,8 @@
 
   .search-icon {
     position: absolute;
-    top: 61px;
-    right: 280px;
+    top: 62px !important;
+    left: 800px;
   }
 
   .search-input::placeholder {
@@ -160,10 +164,10 @@
   }
 
   .leak {
-    margin: 30px 50px !important;
-    width: 40%;
+    margin: 30px 90px !important;
+    width: 33%;
     float: left;
-    min-height: 500px !important;
+    min-height: 430px !important;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.8);
   }
 
@@ -190,5 +194,101 @@
   .leak .card-body p {
     font-size: 13px;
     font-family: 'Ubuntu';
+  }
+
+  // SUBMISSION FORM
+  .submit-title {
+    position: absolute;
+    top: 20%;
+    left: 300px;
+    font-family: 'Exo';
+    font-size: 12px;
+    padding: 3px;
+    color: black;
+    background-color: white;
+    letter-spacing: 1px;
+  }
+
+  .submit-p {
+    font-size: 12px;
+    position: absolute;
+    overflow: hidden;
+    top: 27%;
+    left: 300px;
+    width: 40% !important;
+    text-align: left;
+    font-family: 'Ubuntu';
+  }
+
+  .submit-form {
+    font-size: 12px;
+    position: absolute;
+    top: 40%;
+    left: 320px;
+    text-align: left;
+    width: 50% !important;
+    overflow: hidden;
+  }
+
+  .submit-form input {
+    background: #170935;
+    font-family: 'Ubuntu';
+    width: 10% !important;
+    color: white;
+    overflow: hidden;
+  }
+
+  .submit-form input:focus {
+    background: #170935;
+    color: white;
+  }
+
+  .submit-form input::placeholder {
+    color: white !important;
+  }
+
+  .submit-btn {
+    margin: 20px 0px;
+    padding: 5px 20px;
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+    color: #0e0520;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  // Donate
+  .page-donate {
+    width: 50% !important;
+    padding: 10px 0px 0px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+
+  .modal {
+    margin-top: 100px !important;
+  }
+
+  .donate-card {
+    width: 50%;
+    margin-left: 270px;
+  }
+
+  .Search-input {
+    margin-left: 320px;
+  }
+
+  .Search-icon {
+    right: -310px !important;
+  }
+
+  .admin-panel {
+    width: 700px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }

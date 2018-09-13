@@ -99,12 +99,6 @@ class Admin extends Component {
         docs: resp.data
       });
     });
-
-    // if (this.props.user.user[0]) {
-    //   return (window.location.href = 'http://localhost:3000/#/admin');
-    // } else {
-    //   return (window.location.href = 'http://localhost:3000/#/');
-    // }
   }
 
   handleClick = id => this.setState({ open: !this.state.open, leak_id: id });
@@ -255,7 +249,7 @@ class Admin extends Component {
                     {mappedLeaks}
                   </table>
 
-                  <a href="http://localhost:3005/auth/logout">
+                  <a href={process.env.REACT_APP_LOGOUT}>
                     <button className="btn btn-danger btn-block mt-5 logout-btn">
                       Logout
                     </button>

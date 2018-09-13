@@ -1,3 +1,9 @@
+%button {
+  color: #0e0520;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 // ADMIN PANEL
 .admin-panel {
   position: relative;
@@ -36,9 +42,7 @@
   padding: 5px 20px;
   position: absolute;
   left: 15px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold;
+  @extend %button;
 }
 
 .update-delete-btn {
@@ -46,9 +50,7 @@
   padding: 5px 20px;
   position: absolute;
   right: 15px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold;
+  @extend %button;
 }
 
 .sidebar {
@@ -62,9 +64,7 @@
   z-index: 5;
   margin: 20px 0px;
   padding: 5px 20px;
-  color: #0e0520;
-  text-transform: uppercase;
-  font-weight: bold;
+  @extend %button;
 }
 
 .sidebar-nav {
@@ -82,10 +82,8 @@
   top: 40px;
   right: 5px;
   padding: 5px 10px;
-  color: #0e0520;
   float: right;
-  text-transform: uppercase;
-  font-weight: bold;
+  @extend %button;
 }
 
 .portal-form label {
@@ -130,10 +128,8 @@
 .submit-delete-btn {
   margin: 20px 0px;
   padding: 5px 20px;
-  color: #0e0520;
   float: right;
-  text-transform: uppercase;
-  font-weight: bold;
+  @extend %button;
 }
 
 .login-btn {

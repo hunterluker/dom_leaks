@@ -97,7 +97,10 @@ class Navbar extends Component {
     return (
       <div className="fluid-container header">
         <nav className="navbar navbar-light justify-content-between">
-          <a className="navbar-brand text-white" href="http://localhost:3000/">
+          <a
+            className="navbar-brand text-white"
+            href={process.env.REACT_APP_HOME}
+          >
             <Spinner name="triangle-skew-spin" color="white" />
             DOM LEAKS
           </a>
