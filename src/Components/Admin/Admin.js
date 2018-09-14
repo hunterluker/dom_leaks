@@ -224,19 +224,19 @@ class Admin extends Component {
                   </table>
 
                   <h5 className="table-leaks mt-5 float-left">Leaks</h5>
-                  <button className="post-btn">
-                    <i
-                      className="fas fa-plus"
-                      content={open ? 'Close Portal' : 'Open Portal'}
-                      negative={open}
-                      positive={!open}
-                      onClick={() => {
-                        this.handleClick();
-                        this.setState({
-                          add: true
-                        });
-                      }}
-                    />
+                  <button
+                    className="post-btn"
+                    content={open ? 'Close Portal' : 'Open Portal'}
+                    negative={open}
+                    positive={!open}
+                    onClick={() => {
+                      this.handleClick();
+                      this.setState({
+                        add: true
+                      });
+                    }}
+                  >
+                    <i className="fas fa-plus" />
                   </button>
                   <table className="table table-striped table-dark admin-table">
                     <thead>

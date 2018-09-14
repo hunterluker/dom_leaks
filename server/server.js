@@ -193,8 +193,8 @@ app.get(`/api/user-data`, envCheck, (req, res) => {
 app.get('/auth/logout', (req, res) => {
   req.session.destroy();
 
-  res.redirect(process.env.HOME);
-  res.send();
+  res.redirect(process.env.MY_HOME);
+  //res.send();
 });
 
 app.delete('/api/user-data/:id', (req, res) => {

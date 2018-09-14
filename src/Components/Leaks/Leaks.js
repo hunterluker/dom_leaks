@@ -46,7 +46,7 @@ export default class Leaks extends Component {
 
     return (
       <div className="container">
-        <div className="page-welcome">
+        <div className="page-welcome leak-welcome">
           {' '}
           <span className="page-number">02</span> Leaks
         </div>

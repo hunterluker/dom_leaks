@@ -220,7 +220,7 @@ footer p {
   footer p {
     font-size: 13px; } }
 
-@media (min-width: 801px) {
+@media (min-width: 800px) {
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
@@ -290,7 +290,7 @@ footer p {
     position: fixed; }
   footer {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     left: 200px;
     width: 100%; }
   footer i {
@@ -304,9 +304,11 @@ footer p {
     position: relative;
     right: 400px; }
   .leaks {
-    width: 100%; }
+    width: 100%;
+    margin-left: 50px; }
   .featured {
-    margin-left: 135px; }
+    margin-left: 135px;
+    display: none; }
   .leak-search {
     position: relative; }
   .search-input {
@@ -314,20 +316,22 @@ footer p {
     font-family: 'Ubuntu';
     color: white;
     width: 50% !important;
-    margin: 0 auto !important; }
+    margin: 0 auto !important;
+    display: none !important; }
   .search-input:focus {
     color: white !important; }
   .search-icon {
     position: absolute;
     top: 62px !important;
-    left: 800px; }
+    left: 800px;
+    display: none; }
   .search-input::placeholder {
     color: white !important; }
   .leak {
-    margin: 30px 90px !important;
-    width: 33%;
+    margin: 30px 0px 30px 120px !important;
+    width: 30%;
     float: left;
-    min-height: 430px !important;
+    min-height: 420px !important;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.8); }
   .leak .card-header {
     background: rgba(176, 171, 182, 0.5); }
@@ -341,28 +345,41 @@ footer p {
   .leak .card-body h2 {
     font-size: 20px;
     font-weight: bold; }
+  .leak-welcome {
+    left: 120px; }
+  .fa-trash-alt {
+    padding-left: 40px !important; }
+  .fa-edit {
+    padding-left: 80px !important; }
   .leak .card-body p {
     font-size: 13px;
     font-family: 'Ubuntu'; }
+  .detail-leak-container {
+    width: 60% !important; }
   .submit-title {
     position: absolute;
     top: 20%;
-    left: 300px;
+    left: 320px;
     font-family: 'Exo';
     font-size: 12px;
     padding: 3px;
     color: black;
     background-color: white;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    margin-top: 20px; }
+  .submit-welcome {
+    left: 120px;
+    margin-bottom: 30px !important; }
   .submit-p {
     font-size: 12px;
     position: absolute;
     overflow: hidden;
     top: 27%;
-    left: 300px;
+    left: 320px;
     width: 40% !important;
     text-align: left;
-    font-family: 'Ubuntu'; }
+    font-family: 'Ubuntu';
+    margin-top: 20px; }
   .submit-form {
     font-size: 12px;
     position: absolute;
@@ -391,6 +408,8 @@ footer p {
     color: #0e0520;
     text-transform: uppercase;
     font-weight: bold; }
+  .news-body table {
+    width: 100% !important; }
   .page-donate {
     width: 50% !important;
     padding: 10px 0px 0px 30px;
@@ -403,7 +422,7 @@ footer p {
     margin-top: 100px !important; }
   .donate-card {
     width: 50%;
-    margin-left: 270px; }
+    margin-left: 280px; }
   .Search-input {
     margin-left: 320px; }
   .Search-icon {
@@ -411,7 +430,24 @@ footer p {
   .admin-panel {
     width: 700px;
     left: 50%;
-    transform: translate(-50%); } }
+    transform: translate(-50%); }
+  .navbar-nav-second {
+    display: flex;
+    flex-direction: row !important;
+    margin-top: 10px; }
+  .nav-item-second {
+    float: left !important;
+    margin-right: 20px;
+    position: relative;
+    right: 150px;
+    list-style-type: none; }
+  .nav-link-second {
+    float: left !important;
+    font-size: 16px; }
+  .container-chat {
+    width: 60% !important;
+    margin-left: 20% !important;
+    height: 85vh !important; } }
 
 .leak-search {
   position: relative; }

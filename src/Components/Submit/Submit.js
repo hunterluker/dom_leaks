@@ -78,7 +78,7 @@ export default class Submit extends Component {
     };
     return (
       <div className="container">
-        <div className="page-welcome">
+        <div className="page-welcome submit-welcome">
           {' '}
           <span className="page-number">03</span> Submit
         </div>

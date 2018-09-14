@@ -138,7 +138,7 @@ class News extends Component {
             />
           </div>
           <div className="row">
-            <div className="col-md-4 mx-auto">
+            <div className="col-md-4 col-lg-6 mx-auto">
               <Table
                 list={list}
                 sortKey={sortKey}

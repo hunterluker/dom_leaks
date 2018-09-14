@@ -8,6 +8,7 @@ import user from '../../images/024-hacker.svg';
 import comment from '../../images/020-comment.svg';
 import news from '../../images/028-newspaper.svg';
 import $ from 'jquery';
+import MediaQuery from 'react-responsive';
 
 class Navbar extends Component {
   render() {
@@ -105,51 +106,89 @@ class Navbar extends Component {
             DOM LEAKS
           </a>
 
-          <div className="radial-menu">
-            <Link to="/">
-              <div className="menu-item1">
-                <img width="26px" src={house} alt="" />
-                {/* <i className="fas fa-home" /> */}
-              </div>
-            </Link>
+          <MediaQuery query="(max-device-width: 800px)">
+            <div className="radial-menu">
+              <Link to="/">
+                <div className="menu-item1">
+                  <img width="26px" src={house} alt="" />
+                  {/* <i className="fas fa-home" /> */}
+                </div>
+              </Link>
 
-            <Link to="/leaks">
-              <div className="menu-item2">
-                <img width="26px" src={leaks} alt="" />
-                {/* <i className="fas fa-sitemap" /> */}
-              </div>
-            </Link>
+              <Link to="/leaks">
+                <div className="menu-item2">
+                  <img width="26px" src={leaks} alt="" />
+                  {/* <i className="fas fa-sitemap" /> */}
+                </div>
+              </Link>
 
-            <Link to="/submit">
-              <div className="menu-item3">
-                <img width="26px" src={submit} alt="" />
-                {/* <i className="fas fa-terminal" /> */}
-              </div>
-            </Link>
+              <Link to="/submit">
+                <div className="menu-item3">
+                  <img width="26px" src={submit} alt="" />
+                  {/* <i className="fas fa-terminal" /> */}
+                </div>
+              </Link>
 
-            <Link to="/donate">
-              <div className="menu-item4">
-                <img width="26px" src={user} alt="" />
-                {/* <i className="fas fa-user-secret" /> */}
-              </div>
-            </Link>
+              <Link to="/donate">
+                <div className="menu-item4">
+                  <img width="26px" src={user} alt="" />
+                  {/* <i className="fas fa-user-secret" /> */}
+                </div>
+              </Link>
 
-            <Link to="/chatroom">
-              <div className="menu-item5">
-                <img width="26px" src={comment} alt="" />
-              </div>
-            </Link>
+              <Link to="/chatroom">
+                <div className="menu-item5">
+                  <img width="26px" src={comment} alt="" />
+                </div>
+              </Link>
 
-            <Link to="/news">
-              <div className="menu-item6">
-                <img width="26px" src={news} alt="" />
-              </div>
-            </Link>
+              <Link to="/news">
+                <div className="menu-item6">
+                  <img width="26px" src={news} alt="" />
+                </div>
+              </Link>
 
-            <div className="navbar-icon bg-light p-2 mask">
-              <span className="navbar-toggler-icon" />
+              <div className="navbar-icon bg-light p-2 mask">
+                <span className="navbar-toggler-icon" />
+              </div>
             </div>
-          </div>
+          </MediaQuery>
+          <MediaQuery query="(min-device-width: 500px)">
+            <nav className="navbar navbar-light bg-transparent justify-content-between">
+              <ul className="navbar-nav-second">
+                <li className="nav-item-second">
+                  <Link to="/" className="nav-link-second">
+                    Home
+                  </Link>
+                </li>
+                <li className="nav-item-second">
+                  <Link to="/leaks" className="nav-link-second">
+                    Leaks
+                  </Link>
+                </li>
+                <li className="nav-item-second">
+                  <Link to="/submit" className="nav-link-second">
+                    Submit
+                  </Link>
+                </li>
+                <li className="nav-item-second">
+                  <Link to="/donate" className="nav-link-second">
+                    Donate
+                  </Link>
+                </li>
+                <li className="nav-item-second">
+                  <Link to="/news" className="nav-link-second">
+                    News
+                  </Link>
+                </li>
+                <li className="nav-item-second">
+                  <Link to="/chatroom" className="nav-link-second">
+                    Chatroom
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </MediaQuery>
         </nav>
       </div>
     );
