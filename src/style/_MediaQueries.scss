@@ -117,13 +117,13 @@
     width: 100%;
   }
   footer i {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
   }
   footer p {
     margin-top: 3px;
     line-height: 2;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     position: relative;
     right: 400px;
@@ -168,10 +168,10 @@
   }
 
   .leak {
-    margin: 30px 0px 30px 120px !important;
-    width: 30%;
+    margin: 30px 0px 30px 100px !important;
+    width: 35%;
     float: left;
-    min-height: 420px !important;
+    min-height: 430px !important;
     box-shadow: 3px 3px 5px rgba(204, 204, 204, 0.8);
   }
 
@@ -290,6 +290,7 @@
   }
 
   // Donate
+
   .page-donate {
     width: 50% !important;
     padding: 10px 0px 0px 30px;
@@ -298,6 +299,10 @@
     font-size: 14px;
     letter-spacing: 3px;
     margin-bottom: 20px;
+  }
+
+  .donate-title-1 {
+    width: 45% !important;
   }
 
   .modal {
@@ -346,5 +351,30 @@
     width: 60% !important;
     margin-left: 20% !important;
     height: 85vh !important;
+  }
+
+  .post-1 a {
+    color: rgb(219, 216, 216);
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+
+  .nav-item-second .nav-link-second {
+    position: relative;
+    text-decoration: none;
+  }
+  .nav-link-second:after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid red;
+    width: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transition: 1s ease;
+    transition: 1s ease;
+  }
+
+  .nav-link-second:hover:after {
+    width: 100%;
   }
 }

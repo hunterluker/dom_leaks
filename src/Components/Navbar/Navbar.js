@@ -106,7 +106,7 @@ class Navbar extends Component {
             DOM LEAKS
           </a>
 
-          <MediaQuery query="(max-device-width: 800px)">
+          <MediaQuery query="(max-device-width: 500px)">
             <div className="radial-menu">
               <Link to="/">
                 <div className="menu-item1">
