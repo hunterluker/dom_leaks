@@ -758,6 +758,15 @@ footer p {
 .account-info {
   margin-top: 40px; }
 
+.stripe-input {
+  width: 70%;
+  padding: 5px;
+  color: black; }
+
+.stripe-price {
+  font-size: 20px;
+  padding: 5px; }
+
 .loader {
   position: absolute;
   top: 50%;

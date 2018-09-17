@@ -28,7 +28,7 @@ class Stripe extends Component {
         image="https://i2.wp.com/thepeoplescube.com/images/various_uploads/NSA_Logo_Prism_Self_Spying_250.png"
         token={this.onToken}
         stripeKey={process.env.REACT_APP_STRIPE_KEY}
-        amount={this.state.amount}
+        amount={this.props.amount * 100}
       >
         <button className="donate-btn">Donate</button>
       </StripeCheckout>

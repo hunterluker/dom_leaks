@@ -5,6 +5,20 @@ import ethereum from '../../images/ethereum.png';
 import litecoin from '../../images/litecoin.png';
 
 class Donate extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      amount: 0
+    };
+  }
+
+  handleInput(val) {
+    this.setState({
+      amount: val
+    });
+  }
+
   render() {
     return (
       <div>
@@ -41,7 +55,14 @@ class Donate extends Component {
               </p>
             </div>
             <div className="card-footer">
-              <Stripe />
+              <input
+                type="text"
+                placeholder="0.00"
+                className="stripe-input mr-3 mb-4 bg-light"
+                onChange={e => this.handleInput(e.target.value)}
+              />
+              <p className="stripe-price d-inline">USD</p>
+              <Stripe amount={this.state.amount} />
             </div>
           </div>
         </div>
