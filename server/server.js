@@ -157,9 +157,9 @@ app.get(`/auth/callback`, async (req, res) => {
 
     if (foundUser[0].email === 'hunterluker33@gmail.com') {
       res.redirect('/#/admin');
+    } else {
+      res.redirect('/');
     }
-
-    res.redirect('/');
   } else {
     let createdUser = await db.create_user([name, email, picture, sub]);
     req.session.user = createdUser[0];

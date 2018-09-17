@@ -220,7 +220,7 @@ footer p {
   footer p {
     font-size: 13px; } }
 
-@media (min-width: 800px) {
+@media (min-width: 500px) {
   .navbar-brand {
     font-size: 30px !important;
     position: relative;
@@ -475,7 +475,8 @@ footer p {
 .search-input {
   background: #170935 !important;
   font-family: 'Ubuntu';
-  color: white; }
+  color: white;
+  display: none; }
 
 .search-input:focus {
   color: white !important; }

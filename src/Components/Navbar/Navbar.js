@@ -106,7 +106,7 @@ class Navbar extends Component {
             DOM LEAKS
           </a>
 
-          <MediaQuery query="(max-device-width: 500px)">
+          <MediaQuery query="(max-device-width: 800px)">
             <div className="radial-menu">
               <Link to="/">
                 <div className="menu-item1">
@@ -153,7 +153,7 @@ class Navbar extends Component {
               </div>
             </div>
           </MediaQuery>
-          <MediaQuery query="(min-device-width: 500px)">
+          <MediaQuery query="(min-device-width: 800px)">
             <nav className="navbar navbar-light bg-transparent justify-content-between">
               <ul className="navbar-nav-second">
                 <li className="nav-item-second">

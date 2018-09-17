@@ -13,6 +13,12 @@ class Donate extends Component {
     };
   }
 
+  componentDidMount() {
+    this.setState({
+      amount: 0
+    });
+  }
+
   handleInput(val) {
     this.setState({
       amount: val

@@ -36,13 +36,15 @@ export default class Leaks extends Component {
   }
 
   render() {
-    let mappedLeaks = this.state.leaks.map((leak, i) => {
-      return (
-        <Link to={`/leaks/${leak.leak_id}`} key={i}>
-          <Leak leak={leak} doc={this.state.docs} />
-        </Link>
-      );
-    });
+    let mappedLeaks = this.state.leaks
+      .filter(el => el.title.includes(this.state.userInput))
+      .map((leak, i) => {
+        return (
+          <Link to={`/leaks/${leak.leak_id}`} key={i}>
+            <Leak leak={leak} doc={this.state.docs} />
+          </Link>
+        );
+      });
 
     return (
       <div className="container">
